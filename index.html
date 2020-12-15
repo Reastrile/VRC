@@ -2,13 +2,8 @@
   <body>
     <script>
       var url = "https://api.vrchat.cloud/api/1/users/usr_592d6cdc-5424-4af7-9162-a06bb8c05a6d?apiKey=JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26";
-      var otherparams = {
-        headers:{
-          "Authorization":"Basic cmR1bToxMmphMTlkZm5hQQ=="
-        }, 
-        method:"GET"};
-
-      alert(fetch(url,otherparams));
+      var otherparams = {headers:{"Authorization":"Basic cmR1bToxMmphMTlkZm5hQQ=="}, method:"GET", options: {mode: 'no-cors'}};
+      alert(get(url,otherparams));
     </script>
   </body>
 </html>
