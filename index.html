@@ -1,1 +1,11 @@
-
+<html>
+  <body>
+    <script>
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", "https://api.vrchat.cloud/api/1/users/[ID]", false);
+      xmlHttp.setRequestHeader("Authorization","Basic aXJ0c2E6ZHVmdXhna2Z5d29oa2Y=);
+      xmlHttp.send(null);
+      alert(xmlHttp.responseText);
+    </script>
+  </body>
+</html>
